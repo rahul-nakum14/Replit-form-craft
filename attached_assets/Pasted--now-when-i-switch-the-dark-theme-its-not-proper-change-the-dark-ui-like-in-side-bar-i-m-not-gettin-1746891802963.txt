@@ -1,0 +1,45 @@
+
+now when i switch the dark theme its not proper change the dark ui like  in side bar i'm not getting the dark theme 
+
+when i click on edit form after create form i cannot view the fields which i added while creation  and also while create of form allow user to publish form as well dutring creation not while editing only now it shows only editing also as of now while click on browser template and select the template it add the single field only and on top shows edit form instead create form bcz we are creating form the templates. so add some fields default in the templates as per template name as in general we have
+
+and also as free plan user i can see the form -expiration is not dispable and the tag is not proper shows form expiration is in pro featurs but in other place ther is only pro 
+
+also i'm not able to delte the form 
+
+also when i click on view analytics shows 
+
+Error loading analytics
+There was a problem loading analytics data. This could be due to a network issue or the form might not exist.
+
+also while verification email sent link like <base-url>/verify-email?token=23456302-b5ef-4fe5-bfc8-d8cb639f179b not like localhost:5000/verify-email?token=23456302-b5ef-4fe5-bfc8-d8cb639f179b
+
+also while click on forgot password nothing haapen so it should create page where i can enter the email
+
+also hanlde the captcha detils in env so i can provide in the premium 
+
+also while Embed Form
+Public Form URL shows your-form-name instead it should fetch from db and shows 
+
+As per Indian regulations, export transactions require a description. More info here: https://stripe.com/docs/india-exports
+
+
+As per Indian regulations, export transactions require a customer name and address. More info here: https://stripe.com/docs/india-exports
+
+ await db.update(users)
+        .set({
+          password: hashedPassword,
+          updatedAt: new Date()
+        })
+        .where(eq(users.id, user.id));
+        
+        wherevent the use of the db shows db not defined so as now i got this like while change password so update that wherenve use the db i can see that it uses multiple place in the api like crete subscription /user/apssword /user/profile /verify-payment /subscription-webhook/  /create-subscription so update or any other places if used 
+
+
+
+
+
+
+make sure now u follow and change all the things and issue 
+
+

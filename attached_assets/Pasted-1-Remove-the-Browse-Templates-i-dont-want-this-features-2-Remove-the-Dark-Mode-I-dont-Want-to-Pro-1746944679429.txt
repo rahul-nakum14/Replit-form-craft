@@ -1,0 +1,45 @@
+1. Remove the Browse Templates i dont want this features 
+2. Remove the Dark Mode I dont Want to Provide this features
+3. Allow User to Delete Forms 
+4. Allow User to Edit The Forms with the details Created now after creation when i edit no existing information there it looks like creating forms again 
+5. Allow User to Preview Forms while Click on preview on the dashboard and same for the analytics.
+6. FOrgot password page not working. so while click on it should shows forgot password.
+7. While Embed Form Public Form URL shows your-form-name instead it should fetch from db and shows.
+8. User is not able to change the password.
+9. While Updating the email make sure verification link send to the new email address as per standard.
+8. Getting the following error while making payments.
+	As per Indian regulations, export transactions require a description. More info here: https://stripe.com/docs/india-exports
+
+
+	As per Indian regulations, export transactions require a customer name and address. More info here: https://stripe.com/docs/india-exports
+
+9. while visiting the /analytics shows Error loading analytics
+There was a problem loading analytics data. This could be due to a network issue or the form might not exist. Fix this also 
+
+10. I want to change that there will be no such thing like advance form fields in the Premium both free and premium gets same fields .
+
+	Following is the Difference.
+
+	Free Plan: 
+
+	3 forms 
+	basic anaylics 
+	100 form submission 
+	form expiration settings 
+
+	premium
+
+	unlimited forms 
+	advance analytics 
+	email notifications
+	unlimited submission
+	captcha implemention
+	form expiration settings
+	custom message after form submission
+	custom url redirect after the form submission
+
+11. Make sure Notification send to user whenever required.
+12. On the Home page Remove Keep the Testimonials live like which actially user provided and the count of 
+	the user which the real not like  100,000+ users  same for ratings create the Contact us page.
+	
+Make Sure You will make this changes and without it do not create any checkpoints.

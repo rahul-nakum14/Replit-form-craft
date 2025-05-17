@@ -1,0 +1,85 @@
+Please go through this project and fix the following issues. The goal is to make the application fully functional and error-free on local development. Below is a step-by-step breakdown of the current problems:
+
+1. Environment Configuration
+Fix the error: Error: DATABASE_URL must be set. Did you forget to provision a database?
+
+Ensure .env file is loaded correctly.
+
+Set up a working .env.example file with necessary variables like DATABASE_URL, NEXTAUTH_SECRET, MONGODB_URI, etc.
+
+Add fallback or development default values where applicable.
+
+2. Database Integration
+The app is currently trying to use Drizzle but throws errors related to the DATABASE_URL. Clarify:
+
+Are we using Drizzle ORM or MongoDB (or both)? If MongoDB, then remove unnecessary Drizzle configuration.
+
+Fix issues in services/mongodb.ts:
+
+Validate MongoDB connection logic.
+
+Add proper error handling for failed connections.
+
+Ensure it's not trying to reconnect on every API call.
+
+3. Authorization / Authentication
+When updating profile info, an error shows: Authorization is required.
+
+Ensure protected routes and APIs check user session/token properly using NextAuth or the chosen auth method.
+
+Add middleware or route guards if missing.
+
+4. Checkout Page
+Checkout flow is broken or incomplete.
+
+Fix any API routes related to payment processing or order creation.
+
+Ensure any premium logic (such as plan validation) is working.
+
+Confirm whether a payment provider (Stripe?) is correctly set up.
+
+5. Premium Features
+You mentioned "API access" for premium users, but it is not functional.
+
+Implement actual API access control based on user subscription.
+
+Add UI components to view or generate API keys.
+
+Create endpoint to verify API key and usage limits.
+
+6. Support Section
+Clicking on "Support" does nothing or behaves incorrectly.
+
+Make the Support link functional:
+
+Either open a modal, navigate to a support form page, or trigger an email intent.
+
+Ensure the mail client opens with the correct mailto: link if that's the intended behavior.
+
+7. Analytics Page
+The Analytics section throws: Error loading analytics.
+
+Fix the data fetching logic (likely an API route or DB issue).
+
+Add loading/error states on the frontend.
+
+Make sure the user has permission to view analytics.
+
+8. Local Development Instructions
+Provide a clear README or documentation for local setup.
+
+Include:
+
+.env setup
+
+Database setup (MongoDB / Drizzle?)
+
+How to run dev server (npm run dev or yarn dev)
+
+Seeding or dummy data instructions
+
+Optional: Docker setup
+
+Final Deliverable:
+A fully functional local development environment with all major features (auth, API, premium access, analytics, support) working without throwing errors.
+
